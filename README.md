@@ -2,6 +2,7 @@
 The basics of of Python as I have learned them. 
 
 == Variables ==
+
 Variables allow you to assign and store value for a given piece of information. They are implicitly declared and strong-typed. Here some
 of the basic strong-typed variables you can store in your program. 
 
