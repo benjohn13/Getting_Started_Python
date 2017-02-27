@@ -45,7 +45,7 @@ cmp(11, 13)
 # is needed for Python 2.x versions.
 
 userName = input('Please enter your name: ')
-age = input('Please enter your age: ') 
+age = int(input('Please enter your age: ')) 
 
 factor = 2 
 finalAge = age + factor
