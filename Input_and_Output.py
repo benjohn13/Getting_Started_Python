@@ -58,16 +58,7 @@ print('Your age divided by', factor, 'is', divAge)
 
 # Output: 
 # Please enter your name: Ben 
-# Please enter your age: 20
-# In 2 years you will be 22 years old Ben
-# Your age multiplied by 2 is 40
-# Your age divided by 2 is 10
-
-# Now since I am letting the user input their age in a raw format, they could enter
-# an odd number and Python will round down when it divides the number. A user could 
-# also write in a number with text rather than entering a number, which will cause an 
-# error. This is where we will want to code in error handling, maybe make it so the user
-# always has to enter a number and/or have the program handle it like a float so it 
-# divide number into a decimal. 
-
-divAge = float(age) / factor
+# Please enter your age: 27
+# In 2 years you will be 29 years old Ben
+# Your age multiplied by 2 is 54
+# Your age divided by 2 is 13.5
