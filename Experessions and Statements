@@ -1,0 +1,26 @@
+Experessions and Statements
+
+I just wanted to put down the notes from class about the definition/difference 
+of these two words for future reference and because they are important in 
+programming documentation. 
+
+An "Expression" almost always evaluates to a value. So it becomes a true, or 
+a false, or a number, or a string, or something else. An expression is not a 
+standalone programming statement. Rather it's a part of a statement that, in 
+turn, can be reduced down to a single value. And our if statements can be reduced 
+down to what's called a Boolean value, which can be true or false. 
+
+"Statements", on the other hand, are full, complete sentences inside of our 
+programming language. And a full sentence means that it may contain expressions. 
+It may not. But it can stand on its own. It will execute entirely on its own in 
+theory as part of our computer program. So when we talk about the if-then-else 
+structure, what we're saying is that we have to run if, or key in the word if, 
+and then have an expression that's going to evaluate to either true or false.
+
+if <Expression>
+
+  then <Statement>
+
+else <Expression>
+
+  then <Statement>
