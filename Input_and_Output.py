@@ -2,12 +2,10 @@
 
 # Here we have the "print" function with a single parameter; the text value, 'Hello World!'
 # You can learn more at: https://docs.python.org/2/library/functions.html#print
-
 print('Hello World!')
 
 # When looking at the "print" function documentation, it has a couple of cool named-parameters
 # that can be added. For example in Python 3.x,
-
 print('Hello', 'World', '!', sep='')
 
 # Output:
@@ -15,9 +13,7 @@ print('Hello', 'World', '!', sep='')
 
 # I gave the sep='' parameter a non-space string argument, which smooshed the values together 
 # with no spaces. Another named-parameter, 
-
 print('Hello', 'World', '!', end='')
-
 print('Hello', 'World', '!', sep='')
 
 # Output:
@@ -27,9 +23,8 @@ print('Hello', 'World', '!', sep='')
 # I explicitely told the program to have no spaces or new line breaks with the non-
 # space string argument in the end'' named parameter.
 
-# Now I want to call the "compare" function to compare multiple values
-# and will separate the values with commas to establish parameters.
-
+# Now I want to call the "compare" function to compare multiple values and will separate 
+# the values with commas to establish parameters.
 cmp(11, 13)
 
 # Output:
@@ -43,9 +38,8 @@ cmp(11, 13)
 # instead instead of just playing with static code. And since I am using Python 3.6 
 # in this example, I will be using the 'input' function instead of 'raw_input' which 
 # is needed for Python 2.x versions.
-
-userName = input('Please enter your name: ')
-age = int(input('Please enter your age: ')) 
+userName = input('Please enter your name: ' )
+age = int(input('Please enter your age: '))
 
 factor = 2 
 finalAge = age + factor
