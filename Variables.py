@@ -1,79 +1,58 @@
-# Variables 
+# Input and Output
 
-# Variables allow you to assign and store value for a given piece of information. They are implicitly declared and strong-typed. Here some
-# of the basic strong-typed variables you can store in your program. 
+# Here we have the "print" function with a single parameter; the text value, 'Hello World!'
+# You can learn more at: https://docs.python.org/2/library/functions.html#print
+print('Hello World!')
 
-# Numeric
-# String
-# List 
-# Tuple
-# Dictionary
+# When looking at the "print" function documentation, it has a couple of cool named-parameters
+# that can be added. For example in Python 3.x,
+print('Hello', 'World', '!', sep='')
 
-# The pieces of code in "/Variables" will be executed each line top to bottom, and assign the value on the left side of equal sign
-# (assignment operator) to the variable on the right side of the operator.
+# Output:
+# HelloWorld!
 
-UserName = 'benjohn13'
-FullName = 'Ben Belcher'
+# I gave the sep='' parameter a non-space string argument, which smooshed the values together 
+# with no spaces. Another named-parameter, 
+print('Hello', 'World', '!', end='')
+print('Hello', 'World', '!', sep='')
 
-print(UserName)
-print(FullName)
+# Output:
+# HelloWorld!HelloWorld!
 
-AltName = UserName
-IncorrectName = 'FullName'
+# Normally there is a line break when a new print statement begins, but in this case
+# I explicitely told the program to have no spaces or new line breaks with the non-
+# space string argument in the end'' named parameter.
 
-print(AltName)
-print (IncorrectName)
+# Now I want to call the "compare" function to compare multiple values and will separate 
+# the values with commas to establish parameters.
+cmp(11, 13)
 
-# Output
+# Output:
+# -1
 
-# benjohn13
-# Ben Belcher
-# benjohn13
-# FullName
+# Some functions can only accept one value, others might take two, or as many as you want.
+# To look at some other functions, or to understand them better, check out the Python 
+# documentation here: https://docs.python.org/2/library/functions.html#cmp
 
+# Now let's create a program that will allow us to get varying input from our users 
+# instead instead of just playing with static code. And since I am using Python 3.6 
+# in this example, I will be using the 'input' function instead of 'raw_input' which 
+# is needed for Python 2.x versions.
+userName = input('Please enter your name: ' )
+age = int(input('Please enter your age: '))
 
-# Here is some example code using some of the different basic data types.
+factor = 2 
+finalAge = age + factor
+multAge = age * factor
+divAge = age / factor
 
-# I used double quotes here for the String variable, which
-# will allow me to use single quotes inside the string 
-varString = "This is a string variable. It can have" \
-            "any combination of letters, numbers or" \
-            "special characters."
+print('In', factor, 'years you will be', finalAge, 'years old', userName)
+print('Your age multiplied by', factor, 'is', multAge)
+print('Your age divided by', factor, 'is', divAge)
 
-# You can use this variable for normal integers ranges
-varInteger = 11
-
-# For really long integers, you can add the letter "L" at 
-# the end to specify this will be a long integer.
-varLong = 12345L
-
-# Using float here for decimal places
-varFloat = 1300.11
-
-varList = [1, 2, 3.5, "Ben", "Sarah", "James"]
-
-varTuple = (1, 2, 3.1, "Alice", "Bob", "Cathy")
-
-varDictionary = { 'First': 'This is the first item in the dictionary',
-                 'Second': 'This is the second item in the dictionary' }
-
-print(varString)
-print(varInteger)
-print(varLong)
-print(varFloat)
-print(varList)
-print(varTuple)
-print(varDictionary)
-
-# Output
-
-# This is a string variable. It can have 
-# any combination of letters, numbers or 
-# special characters.
-# 11
-# 12345
-# 1300.11
-# [1, 2, 3.5, 'Ben', 'Sarah', 'James']
-# (1, 2, 3.1, 'Alice', 'Bob', 'Cathy')
-# { 'Second': 'This is the second item in the dictionary', 
-# 'First': 'This is the first item in the dictionary'}
+# Output: 
+# Please enter your name: Ben 
+# Please enter your age: 27
+# In 2 years you will be 29 years old Ben
+# Your age multiplied by 2 is 54
+# Your age divided by 2 is 13.5
