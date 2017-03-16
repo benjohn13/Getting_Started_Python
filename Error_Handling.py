@@ -1,11 +1,10 @@
 # Error Handling 
 
-# In this section, we're going to take a look at how you can handle, entrap and 
-# report on specific errors that come up when your Python program executes. Error 
-# handling is a really important, basic task that you need to perform inside of 
-# any code that you write. As humans, we're always going to write code that is 
-# prone to producing an error. So let's look at basic error handling structure,
-# which is a try_except statement in Python.
+# In this section, we're going to take a look at how we can handle and report 
+# specific errors that come up when your Python program executes. Error handling 
+# is a really important task that we need to perform inside of any code we write. 
+# As humans, we're always going to write code that is prone to error, so let's 
+# look at some basic error handling with a try_except statement in Python.
 
 # Here we have what appears to be normal code that solves a simple equation
 print("Let's solve the equation (x/2) / (x-y)")
