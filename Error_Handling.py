@@ -38,9 +38,9 @@ ValueError: could not convert string to float: 'twenty'
 
 
 # What if they entered numbers that could "break" the equation? From the user's
-# perspective, they did nothing wrong. But our program could frustrate them because
-# we do not provide them with a clear explanation of why this happened. Note the
-# "ZeroDivisionError" below and check it out in the Python docs.
+# perspective, they did nothing wrong. But our program is frustrating because we 
+# did not provide them with a clear explanation of why this happened. Note the 
+# "ZeroDivisionError" for later.
 
 # Let's solve the equation (x/2) / (x-y)
 # Please enter a value for x: 40
@@ -80,7 +80,8 @@ while True:
 
 		z = (x/2) / (x-y)
 
-# Catching the error here, storing it in variable "e" and printing it out
+# Catching the error here with an "exception", storing it in 
+# variable "e" and printing it out in the "else" statement
 	except Exception as e:
 		print("There was an error with the code.")
 		print("Error Message:", str(e))
@@ -98,10 +99,11 @@ Error Message: float division by zero
 
 
 # This is a good start, but let's dive a little deeper. Python actually has some 
-# "exception" functions we can use in our code and you learn more about them in 
-# the documentation: https://docs.python.org/2/library/exceptions.html
+# "exception" functions we can use in our code and you can learn more about them 
+# in the documentation: https://docs.python.org/2/library/exceptions.html
 
-# Let's use one of Python's "exception" functions to make our code a little better
+# Let's use Python's "ZeroDivisionError exception" function to make our code a 
+# little cleaner and see it in action.
 while True:
 	try:
 		print("Let's solve the equation (x/2) / (x-y)")
