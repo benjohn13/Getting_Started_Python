@@ -1,4 +1,4 @@
-== Getting Started with Python Programming ==
+# getting_started_with_python_programming
 
 Notes from learning to program with Python. A computer is a logically malleable device. While it can be an unforgiving, literal machine,
 it can be explicitly instructed (programmed) to do almost anything. Python is a robust programming language capable of such a task, and
